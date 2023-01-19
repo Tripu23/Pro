@@ -1,0 +1,72 @@
+p {
+    color: green;
+    width: 300px;
+}
+h1 {
+    /** para aplicarle tipografia ↓*/
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(163, 255, 127);
+    /**border-style: dotted;*/
+    border: 10px rgb(255, 158, 47);
+    border-style: double;
+    color:brown;
+    margin-top: 0.7cm;
+    padding: 15px;  
+    /* orden prop en la inspeccion de la consola: como reloj: top, der, abajo, izq */
+    padding-bottom: 10px;
+    padding-top: 0.2cm;
+    /**se puede hacer todo en una sola linea tmb:
+    padding: 10 px 15px 0.2 cm 15px; */
+}
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+/** section igual q div*/
+
+/**
+comentario en doc css - ver w3schools
+*/
+
+/** se pueden compartir prop de los elem separando x coma por ej:
+
+p, span {} ... */
+
+/** si le quiero aplicar un estilo distinto a un determinado elemento uso el id *es como su dni ninguno se va a llamar igual */ 
+
+/** para aplicarle prop a un det elemento:
+#mi_id {
+    color ...
+    border...
+
+}
+
+*/
+
+/** para que distintos elem (x ej id1, id2) tengan igual prop hago una clase. es preferible esta forma y con id tmb en vez de ponerle el style a cada elemento*/
+
+.estaesmiclase {
+    color: lightblue;
+}
+
+/** le tengo q poner el atributo en donde aparezca en mi html */
+
+/** para ponerle una prop a x ej todos los titulos q aparecen puedo poner
+
+section h1 {
+
+}
+
+ese lo q hace es a cada h1 q aparezca en las secciones le aplica la prop
+
+/**responsive web design*/
+* {
+    box-sizing: border-box;
+}
+
+
+/**media queries: segun el tama;o de pantalla le doy algun estilo*/
+
