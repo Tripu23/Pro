@@ -5,4 +5,130 @@ Estrategias
 reconocer el problema que queremos solucionar
 hacernos un diagrama de flujo
 app.diagrams.net del tipo drawio
+
+me creo un algoritmo: conjutno de instrucciones definidas ordenadas y acotadas
+
+rombo para condicionales
+rect para desenlace (no implica sn del problema)
+
+Como empezar a pensar logicamente
+Estrategias
+-divide y venceras :D
+Resolucion recursiva de un problema dividiendolo en subproblemas
+
+-do not repeat yourself
+evitar duplicar el codigo de fuente:
+cuando descubris q estas escribiendo el mismo codigo una y otra vez
+todo indica que habra una mejor manera de hacerlo
+
+por ahi en 2 sentencias se puede resolver, es mas facil mantenerlo asi q con 10 sentencias
+
+lo bueno de la logica q uno hace con el diag de flujo (en el drawio) es q cualquiera del tema lo puede entender
+lo resolvera en el lenguaje y sintaxis q corresponda
+
+-wet
+write everything twice (Escribir todo dos veces: escribir todo lo q pienso) 
+tal vez esto hacerlo en papel y lapiz y desp codear lo nec
+
+si quiero seguir profundizando: ulm lenguaje de modelado unificado
+↑ casos de uso
+
+algoritmo:receta de cocina gg
+Ejemplos de algoritmos de programacion
+pensar en lo q hago durante el dia y q decisiones voy validando sin darme cuenta
+
+scratch.mit.edu ← pag para "programar" p niños capaz es util
+
+-pseudocodigos
+algoritmo: nombre q le pongo
+variables: las q aparecen
+inicio
+...desarrollo/secuencia
+salida (o fin)
+
+abstraer problema para pensarlo logicamente
+
+- computacion tradicional:
+datos + algorit computadora=resultado
+- machine learning: la maquina aprende de sus propios datos y rdos
+datos+resultado=algoritmo de computadora
+
+Modulo II
+la logica es igual para todos los lenguajes, lo que varia es la sintaxis
+- lenguaje de programacion
+debe tener distintas caracteristicas:
+vamos a estar escribiendo codigo fuente. normalmente no funciona todo de una ja
+se va poniendo a prueba lo q uno va desarrollando, depurar →debuggear: encontrar donde esta el error
+prueba - depurar - prueba - depurar
+lo q esta estable en produccion no se toca mas, desp si surgen mejoras bueno se va manteniendo
+
+escribir sintactica y semanticamente como corresponde
+
+html: lenguaje de marcado para hacer pag web. no es lenguaje de programacion pq no tiene logica, no toma decisiones
+
+logica es para la capa de comportamiento/interaccion con usuario de la pag. si toca tal boton q pase tal cosa
+
+javascript se usa tanto en frontend (lo q veo en la pantalla en el navegador) como en backend (del lado del servidor)
+lenguaje q se compila:
+el codigo fuente q escribimos mediante un proceso de compilacion hace un binario q puede ser ejecutado en el sistema operativo
+esto no es asi en el lenguaje de interpretacion: cuando ejecutamos, recien ahi se interpreta lo q esta desarrollado
+
+se debe hacer el desarrollo de documentación para q se entiendan las nociones básicas, pq si no nos vamos a perder (poner que parte envia mail, cual da rta automaticas, etc)
+documentar lo importante q me gustaria tener en claro
+
+- interpretes y compiladores
+compilador: agarra codigo fuente(escrito en lenguaje de programacion) y lo baja a codigo de máquina (assembly). Ej: Java es un lenguaje compilador
+programa fuente (escrito x ej en JS) → compilador → programa objeto
+p/ tener un ejecutable y ver q salida tiene lo q escribir
+produce un ejecutable con lenguaje de mauqina
+si  hay un error al tratar de xcompilar t avisa en q linea esta y no se puede ejecutar- no obtengo ejecuyable binario
+
+interprete: programa capaz de analizar y ejecutar otros programas
+traduce programa desde su descripcion mientras se va ejecutando. ej: php
+
+se va ejecutando y si hay error crushea el programa: no puede seguir adelante
+en l0s nav web hay interpretes
+
+*clasificacion de leng
+s/ q tan cerca estoy de hablarle al hardware
+.alto nivel: lejos
+.bajo nivel: + cerca
+
+s/ paradigmas (depende del lenguaje tmb)
+.procedural: receta cocina paso  a paso
+.orientado a objetos: mas ordenado
+.dirigida por eventos (event ridden): esta empezando a utilizarse ahora
+
+que plataforma necesito para cada lenguaje?
+tenerlo presente
+
+-Tipado de lenguaje
+.tipado fuerte
+no podemos violar lo q almacenan las variables x definicion (x ej un entero, un num con coma, un stream)
+conversion de tipos (typecasting) → para desligarnos de esto ↑
+subrutinal(float(x)) algo asi
+no es una buena practica de programacion, solo usarlo de comodin 
+ 
+.no tipado
+javascript es no tipado. 
+directamente defino y luego redefino con cualq tipo de variable. ej:
+
+var nombre = "Giuliana";
+console.log{"nombre vale:" +nombre};
+
+nombre = 33;
+console.log{nombre};
+↑ese tipo de practica no es recomendable pq es desorganizado depende q parte del codigo esta toma determinado valor
+
+buscar en google
+buenas practicas de: lenguaje q me interesa
+
+-lenguaje de programacion C. Kernighan y Ritchie 
+↑ es una "biblia" de la programacion
+
+---
+Modulo III: Estructuras de la programacion
+
+- Tipos y usos de variables
+
 -->
