@@ -1,3 +1,8 @@
+body {
+    background-color: rgb(110, 199, 192);
+    color: white;
+}
+
 p {
     color: green;
     width: 300px;
@@ -69,4 +74,6 @@ ese lo q hace es a cada h1 q aparezca en las secciones le aplica la prop
 
 
 /**media queries: segun el tama;o de pantalla le doy algun estilo*/
-
+#demo {
+    color: rgba(255, 0, 0, 0.808);
+}
