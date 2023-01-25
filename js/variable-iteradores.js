@@ -64,11 +64,11 @@ for (w; w>5; w--) {
 //no existe unica forma de hacer una iteracion
 
 //iterador while
-var x=10;
+var xx=10;
 
-while (x>0) {
-    console.log("mi variable vale: " +x); //ingresa y ejecuta
-    x--; //acciona
+while (xx>0) {
+    console.log("mi variable vale: " +xx); //ingresa y ejecuta
+    xx--; //acciona
 }
 
 //for para cuando sabemos la cantidad de iteraciones q hace el ciclo. 
@@ -76,22 +76,22 @@ while (x>0) {
 
 //iterador do-while
 
-var x=10;
+var xxx=10;
 do{
-    console.log("mi variable vale:" +x)      //primero ejecuto una vez la sentencia y desp pregunto si sigo ejecutando o no  
-    } while (x>10);
+    console.log("mi variable vale:" +xxx)      //primero ejecuto una vez la sentencia y desp pregunto si sigo ejecutando o no  
+    } while (xxx>10);
 
 //ejecuta una vez y desp pregunta ↑ 
 
 //sentencia break: para que corte el ciclo en cierto valor de mi variable
 
-var w=10;
-for (w; w>0; w--) {
+var uu=10;
+for (uu; uu>0; uu--) {
 
-    if (w==5) {
+    if (uu==5) {
         break;
     }
-    console.log("El valor de w es: "+w); //sentencia q se repite mientras w cumpla con la condicion
+    console.log("El valor de w es: "+uu); //sentencia q se repite mientras w cumpla con la condicion
 }
 
 //sentencia continue es opuesta a break
