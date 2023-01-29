@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo-cv</title>
+    <link rel="stylesheet" type="text/css" href="css/modelo-cv.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&family=Varela+Round&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1 class='container text-center 'id="name"></h1>
+
+    <section class="container text-justified">
+        <div class='row' id="ID">
+            <div class="col-6">
+            
+                <ul>
+                    <li id="edad"></li>
+                    <li id="dob">dia de nacimiento</li>
+                    <li id="ciudad">city</li>
+            
+                </ul>
+            
+            </div>
+       
+        
+            <div class="col-6">
+                
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto de contacto" />
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="conteiner-fluid" id="perfil_prof"></section>
+    </section>
+
+    <section class="conteiner text-center" id="contenido">
+        <div class="row">
+        
+            <section class="col-12 col-md-4" id="formacion">
+            formacion academica cursos extras 
+            </section>
+    
+            <section class="col-12 col-md-4" id="experiencia">
+            experiencia profesional etc
+            </section>
+
+            <section class="col-12 col-md-4" id="sobre-mi">
+            habilidades
+            </section>
+        
+        </div>
+    </section>
+
+    <section class="container text-aligned" id="contacto">
+        <p class="container text-center">¡Contactame!</p>
+        <form action="" method="post" target="_self" autocomplete="on">
+        
+            <ul>
+            <li type="none">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required/>
+            </li>   
+        
+            <li type="none">
+            <label>Mail</label>
+            <input type="text" name="apellido" placeholder="Ingrese su mail" />
+            </li>    
+        
+            <li type="none">
+            <label>Comentario</label>
+            <input type="email" name="mail" placeholder="Ingrese su mensaje" />
+            </li>
+        
+            <li type="none">
+            <label>Telefono (opcional)</label>
+            <input type="number" name="telefono" placeholder="Ingrese numero de telefono"/>
+            </li>            
+        
+            <input type="submit" value="Enviar"/>
+        
+            </ul>
+        </form>
+    </section>
+    
+    <script src="js/modelo-cv.js"></script>
+</body>
+</html>

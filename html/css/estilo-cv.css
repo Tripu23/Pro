@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(152, 233, 206);
+    color: grey;
+}
+
+p {
+    color:whitesmoke;
+    border-style:groove;
+    margin-top: 50px;
+    padding-top: 10px;
+    
+}

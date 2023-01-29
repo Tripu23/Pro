@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Creating an Object from a JSON String</h2>
+    <p id="demo"></p>
+
+    <script>
+    const Url = []
+    
+    fetch('https://randomuser.me/api/?noinfo')
+    .then((response) => response.json())
+    //.then((json) => console.log(json))
+        .then(function (json) {
+            Url.push(json.results[0])
+        })
+    console.log(Url)
+    
+    const myPara=document.createElement('p');
+    myPara.textContent=Url['gender'] //no funciona
+    console.log(myPara)
+
+    //function ()
+    //.then(data=>{return data.json()})
+    //.then(res=>{console.log(res)})
+    
+    //const myPara=document.createElement('p');
+    //myPara.textContent=jsonObj['results'];
+    //console.log(myPara)
+    //document.getElementById("demo").innerHTML = 
+        // "Nombre: " +data.results.name+"; "+ 
+        // "Edad: " + obj.edad+"; " +
+        // "Nacionalidad: " +obj.nacionalidad;
+    
+    </script>
+</body>
+</html>

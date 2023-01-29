@@ -1,0 +1,35 @@
+/*font-family: 'Ranchers', cursive;
+font-family: 'Varela Round', sans-serif;
+
+justify-content: space-between; para la imagen y los datos personales cuando los ponga en columnas
+*/
+
+/*-webkit-text-fill-color: rgb(100, 200, 0); p cambiar color texto*/
+body{
+    background-color: rgb(90, 156, 134);
+    /**background-image: url('https://dr.savee-cdn.com/things/6/3/d4494b768148cb408161d0.webp');*/
+    font-family: 'Varela Round', sans-serif;
+    justify-content: center;    
+    align-content: center;
+}
+
+ul{
+    list-style-type: circle;    
+}
+
+
+h1{
+    font-family: 'Ranchers', cursive;
+}
+/*
+para contacto
+https://dr.savee-cdn.com/things/6/2/de446539346503060ca88b.webp
+https://dr.savee-cdn.com/things/5/d/526bc09d034a131fa0d6d5.webp
+https://dr.savee-cdn.com/things/6/3/b5761f92e2a4b2645503d0.webp
+
+
+
+
+formacion:
+https://dr.savee-cdn.com/things/6/0/2295fc44e04f3edb591e60.webp
+*/
