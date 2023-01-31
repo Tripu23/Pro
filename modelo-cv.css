@@ -1,0 +1,59 @@
+/*font-family: 'Ranchers', cursive;
+font-family: 'Varela Round', sans-serif;
+
+justify-content: space-between; para la imagen y los datos personales cuando los ponga en columnas
+*/
+
+/*-webkit-text-fill-color: rgb(100, 200, 0); p cambiar color texto*/
+body{
+ /**   background-color: rgb(90, 156, 134);*/
+    background-blend-mode: normal;
+    background-image: url('https://www.xtrafondos.com/wallpapers/degradado-difuminado-verde-7936.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    
+    font-family: 'Varela Round', sans-serif;
+    justify-content: center;    
+    align-content: center;
+}
+
+.list-group-item{
+    background-color: transparent;
+}
+
+
+h1{
+    font-family: 'Aboreto', cursive;
+    /*height: 10%;
+    margin-top: 5%;*/
+}
+
+/*#datos_pers{
+    height: 20%}*/
+
+
+#foto{
+    border-style: groove; 
+}
+
+
+#perfil_prof{
+   /* margin-block: 5%;*/
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#enviar{
+    background-color: green;
+    border-color: green;
+}
+/*
+para contacto
+https://dr.savee-cdn.com/things/5/d/526bc09d034a131fa0d6d5.webp telefono amarillo
+
+social media
+https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
+*/
+
+
