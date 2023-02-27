@@ -20,26 +20,41 @@
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png"> 
     <link rel="manifest" href="/site.webmanifest">
 
+    <script src="https://kit.fontawesome.com/7e09e00982.js" crossorigin="anonymous"></script>
+    
+    <link href="fontawesome/all.css" rel="stylesheet">
+    
+
 </head>
 <body>
 
-    <div class="mt-2 p-4 bg-success text-white rounded">
-        <h1 class='container text-center 'id="name"></h1>
+    <div class="mt-2 p-4 bg-success text-white text-center rounded">
+        <div class="row">
+            <div class="col-1" id="home">
+            <i class="align-items-center fa-solid fa-house text-white"></i>
+            </div>
+
+            <div class="col-11 name">
+            <h1 class='container text-center'id="name"></h1>
+            </div>
+        </div>
     </div>
     
     <section class="container text-justified" id="datos_pers">
         <div class='row align-items-center' id="ID">
             
-            <div class="col-md-4" id="imagen">
-                
-                <img src="https://randomuser.me/api/portraits/men/22.jpg" id="foto" alt="Foto de contacto" class="mx-auto d-block rounded-circle img-fluid" />
-                
-            </div>
+            <div class="container col-md-4">
+                <div class="card bg-transparent" style="height:min-content;" id="imagen">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" id="foto" alt="Foto de contacto" class="card-img mx-auto d-block rounded-circle img-fluid" />
+                </div>
+            </div>    
 
-            <div class="card border-light col-md-4 bg-transparent" id="edad-city">
+
+            <div class="container col-md-4 ">
+            <div class="card border-light  bg-transparent" id="edad-city">
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="edad"></li>
+                        <li class="list-group-item " id="edad"></li>
                         <li class="list-group-item" id="dob"></li>
                         <li class="list-group-item" id="ciudad"></li>
                 
@@ -47,17 +62,31 @@
                 </div>
                                             
             </div>
+            </div>
+            
             <!--ver eso del style seguro me queda mal en el celu-->
-            <div class="card col-md-4 border-light bg-transparent" style="margin-block-start: -4%;" id="contactar">
-                <div class="card-body">
-                    <h6 class="card-title"> <strong>Datos de contacto</strong></h6>
-                    <a href="#" class="card-link">Celular</a>
-                    <div> </div>
-                    <a href="#" class="card-link">Mail</a>
-                  </div>
+            <div class="container col-md-4 ">
+                <div class="card border-light bg-transparent" style="margin-block-start: -2.1%;" id="contactar">
+                    <div class="card-body">
+                        <h6 class="card-title" onclick="mostrarvalor()" id="datos-contacto"> <strong>Datos de contacto</strong></h6>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#" id="celu" class="card-link">Celular</a>
+                    
+                        <div> </div>
+
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#" id="mail" onclick="mostrarvalor()" class="card-link">Mail</a>
+                        
+                        <div></div>
+                    
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="#" id="linkedin" onclick="mostrarvalor()" class="card-link">Linkedin</a>
+                    </div>
                                 
                 </div>
-            </div>        
+            </div>
+            
+                    
         </div>
     </section>
     
@@ -67,12 +96,12 @@
     <section class="conteiner text-center" id="contenido">
         <div class="row">
 
-            <section class="col-12 col-md-6" style="cursor:pointer" id="experiencia2">
-                <img class="img-fluid" src="https://photomkt.com/wp-content/uploads/2019/11/Blog-FullFrame-Photomkt-Impacto-De-La-Fotografia-En-Blanco-Y-Negro-4.jpg" id="foto-exp2"/>
+            <section class="col-12 col-md-6" style="cursor:pointer" id="experiencia1">
+                <img class="img-fluid" onclick="FotoaTexto1()" src="https://photomkt.com/wp-content/uploads/2019/11/Blog-FullFrame-Photomkt-Impacto-De-La-Fotografia-En-Blanco-Y-Negro-4.jpg" id="foto-exp2"/>
             </section>
 
-            <section style="cursor:pointer" class="col-12 col-md-6" id="experiencia1">
-                <img class="img-fluid" onclick="displayExpe()" src="https://www.el-ilustrador.com/wp-content/uploads/2016/03/apps-ilustradores.jpg" id="foto-exp1"/>
+            <section style="cursor:pointer" class="col-12 col-md-6" id="experiencia2">
+                <img class="img-fluid" onclick="FotoaTexto2()" src="https://www.el-ilustrador.com/wp-content/uploads/2016/03/apps-ilustradores.jpg" id="foto-exp1"/>
             </section>
             
         
@@ -81,11 +110,11 @@
         <div class="row">
             
             <section style="cursor:pointer" class="col-12 col-md-6" id="formacion">
-                <img class="img-fluid" src="https://dr.savee-cdn.com/things/6/0/2295fc44e04f3edb591e60.webp" id="foto-formacion"/> 
+                <img class="img-fluid" onclick="FotoaTexto3()" src="https://dr.savee-cdn.com/things/6/0/2295fc44e04f3edb591e60.webp" id="foto-formacion"/> 
             </section>
     
             <section class="col-12 col-md-6" id="sobre-mi">
-                <img class="img-fluid" style="cursor:pointer" src="https://media.istockphoto.com/id/1456272226/es/foto/mujer-usando-una-computadora-port%C3%A1til-con-%C3%ADconos-de-plan-de-negocios.jpg?b=1&s=170667a&w=0&k=20&c=VFizPr5YRz0bESiMGCzFeaX8xrenqBrraf0UVbwwMsQ=" id="foto-habilidades"/>
+                <img class="img-fluid" onclick="FotoaTexto4()" style="cursor:pointer" src="https://media.istockphoto.com/id/1456272226/es/foto/mujer-usando-una-computadora-port%C3%A1til-con-%C3%ADconos-de-plan-de-negocios.jpg?b=1&s=170667a&w=0&k=20&c=VFizPr5YRz0bESiMGCzFeaX8xrenqBrraf0UVbwwMsQ=" id="foto-habilidades"/>
             </section>
         
         </div>

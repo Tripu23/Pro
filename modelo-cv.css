@@ -17,43 +17,89 @@ body{
     align-content: center;
 }
 
+
+#home{
+    display:flex;
+    align-items: center;
+}
+
+.name{
+    display:flex;
+    align-items: center;  
+}
+
 .list-group-item{
     background-color: transparent;
+
 }
+
+ul{
+    list-style: none;
+}
+
+#datos-contacto::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f007";
+    margin-right: 5px;
+}
+
+#edad::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f0eb";
+    margin-right: 5px;
+
+}
+
+
+#dob::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f073";
+    margin-right: 5px;
+}
+
+#ciudad::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f1d8";
+    margin-right: 5px;
+    
+}
+
 
 
 h1{
     font-family: 'Aboreto', cursive;
-    /*height: 10%;
-    margin-top: 5%;*/
 }
 
-/*#datos_pers{
-    height: 20%}*/
-
+#imagen{
+    border-style: none;
+    display:flex;
+    align-items: center;
+    float: left;
+    width: 200px;
+    height: 200px;  
+}
 
 #foto{
     border-style: groove; 
 }
 
-
 #perfil_prof{
-   /* margin-block: 5%;*/
+    margin: 50px;
     text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
+}
+
+.img-fluid{
+    max-height: 350px;
+    max-height: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 #enviar{
     background-color: green;
     border-color: green;
 }
-/*
-para contacto
-https://dr.savee-cdn.com/things/5/d/526bc09d034a131fa0d6d5.webp telefono amarillo
 
-social media
-https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
-*/
 
 

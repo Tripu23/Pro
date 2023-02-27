@@ -10,11 +10,10 @@ const exp_lab = '{"Ilustrador":{"rol":"Ilustrador","dependencia":"autónomo","lu
 const experiencia=JSON.parse(exp_lab);
 
 console.log(experiencia);
-//const habil = {};
-//const habilidades = JSON.parse(habil);
+
+const habil = "</br> Proactividad </br> Responsabilidad </br> Trabajo en equipo";
 
 //const form_ac = {};
-//const formacion = JSON.parse(form_ac);
 
 
 document.getElementById("name").innerHTML= obj.results.name.first+ " " +obj.results.name.last
@@ -28,23 +27,38 @@ document.getElementById('ciudad').innerHTML = obj.results.location.city +", "+ob
 
 document.getElementById("perfil_prof").innerText= perfil_prof
 
+//document.addEventListener("click", myFunction);
 
-//hay q cambiarle el nombre y hacer el evento ↓
-//document.getElementById('experiencia').innerHTML=experiencia.Ilustrador.rol + ", " +experiencia.Fotografo.rol
-
-//hacer eventos↓
-//document.getElementById('sobre-mi').innerHTML='VIRTUDES'
-const Expe = 'hola esta es mie xperiencia';
-function displayExpe(){
-    document.getElementById("experiencia1").innerHTML=Expe
+function mostrarvalor() {
+  document.getElementById("celu").innerHTML = obj.results.cell;
+  document.getElementById("mail").innerHTML = obj.results.email;
+  document.getElementById("linkedin").innerHTML = "www.linkedin.com";
+  
 }
 
-//document.getElementById('formacion').innerHTML='Formacion'
-//function displayFormacion() {
-  //  document.getElementById("demo").innerHTML = formacionn
-  //}
+const Expe = 'Fotografía'
+const periodo = "2016 - Actualidad"
 
+//se que estoy repitiendo codigo y debe haber algun loop para hacerlo en menos lineas pero bueno e lo que hay
 
+function FotoaTexto1(){
+  document.getElementById("experiencia1").innerHTML=Expe +"<br/> Periodo: " +periodo +"</br>";
+    
+}
+
+function FotoaTexto2(){
+  document.getElementById('experiencia2').innerHTML= "</br>" +experiencia.Ilustrador.rol +"</br> ...</br>" ;
+}
+
+function FotoaTexto3(){
+  document.getElementById("formacion").innerHTML = "Master en Diseño Gráfico - UNIR - 2015" + "</br> Licenciatura en Diseño de la Comunicación Gráfica - University of Westminster - 2014";
+    
+}
+
+function FotoaTexto4(){
+  document.getElementById('sobre-mi').innerHTML= habil
+  
+}
 
   function confirmInput() {
     alert("Gracias, te responderé a la brevedad!");
